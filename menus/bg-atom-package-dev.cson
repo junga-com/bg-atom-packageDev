@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle bg-atom-package-dev'
+      'command': 'bg-atom-package-dev:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'bg-atom-package-dev'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'bg-atom-package-dev:toggle'
+        }
+      ]
+    ]
+  }
+]
